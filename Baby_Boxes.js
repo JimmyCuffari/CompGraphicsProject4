@@ -88,7 +88,7 @@ var createScene = async function () {
    ———————————————————— */
    BABYLON.SceneLoader.ImportMesh("", "./", "dennis.glb", scene,
    function (meshes) {
-        const dennis = meshes[0];
+        const dennis = meshes[1];
 
         // Position & scale
         dennis.position.set(10, 20, 0);  //15 z, 2y, 30x
