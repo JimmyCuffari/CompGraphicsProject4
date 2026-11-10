@@ -126,11 +126,11 @@ BABYLON.SceneLoader.ImportMesh("", "./", "flower.glb", scene,
 
 BABYLON.SceneLoader.ImportMesh("", "./", "kneeling_person.glb", scene,
    function (meshes) {
-        const kneeling_person = meshes[2];
+        const kneeling_person = meshes[3];
 
         // Position & scale
         kneeling_person.position.set(0, 0, 0);  //15 z, 2y, 30x
-        //flower.scaling.setAll(0.2);        // make it bigger
+        kneeling_person.setAll(10);        // make it bigger
         kneeling_person.isPickable = true;        // allow grabbing
 
         /* DEBUG COLOR (uncomment if model still shows black)
@@ -145,11 +145,11 @@ BABYLON.SceneLoader.ImportMesh("", "./", "kneeling_person.glb", scene,
 
 BABYLON.SceneLoader.ImportMesh("", "./", "ring.glb", scene,
    function (meshes) {
-        const ring = meshes[2];
+        const ring = meshes[4];
 
         // Position & scale
         ring.position.set(0, 0, 0);  //15 z, 2y, 30x
-        //flower.scaling.setAll(0.2);        // make it bigger
+        ring.scaling.setAll(5);        // make it bigger
         ring.isPickable = true;        // allow grabbing
 
         /* DEBUG COLOR (uncomment if model still shows black)
