@@ -69,7 +69,7 @@ var createScene = async function () {
         const heart = meshes[0];
 
         // Position & scale
-        heart.position.set(15, 2, 30);
+        heart.position.set(0, 30, 0);  //15 z, 2y, 30x
         heart.scaling.setAll(5);        // make it bigger
         heart.isPickable = true;        // allow grabbing
 
@@ -83,6 +83,28 @@ var createScene = async function () {
     }
    );
 
+ /* ———————————————————
+   3.  IMPORT dennis MODEL
+   ———————————————————— */
+   BABYLON.SceneLoader.ImportMesh("", "./", "dennis.glb", scene,
+   function (meshes) {
+        const dennis = meshes[0];
+
+        // Position & scale
+        dennis.position.set(0, 30, 0);  //15 z, 2y, 30x
+        dennis.scaling.setAll(5);        // make it bigger
+        dennis.isPickable = true;        // allow grabbing
+
+        /* DEBUG COLOR (uncomment if model still shows black)
+        const mat = new BABYLON.StandardMaterial("heartMat", scene);
+        mat.diffuseColor = new BABYLON.Color3(0.8, 0.1, 0.1);
+        heart.material = mat;
+         */
+
+        console.log("dennis loaded!");
+    }
+   );
+   
    /* ———————————————————
    4.  WEB‑XR SETUP (unchanged)
     ———————————————————— */
