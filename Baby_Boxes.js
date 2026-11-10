@@ -48,7 +48,7 @@ var createScene = async function () {
    /* ———————————————————
    2.  DEMO BOXES (unchanged)
    ———————————————————— */
-   const box  = BABYLON.Mesh.CreateBox("box", 4.0, scene);
+/*   const box  = BABYLON.Mesh.CreateBox("box", 4.0, scene);
    box.position.y = 2;
    box.isPickable = true;
    const matBox = new BABYLON.StandardMaterial("matBox", scene);
@@ -60,7 +60,7 @@ var createScene = async function () {
    const matBox2 = new BABYLON.StandardMaterial("matBox2", scene);
    matBox2.diffuseColor = new BABYLON.Color3(0.1, 0.1, 1);
    box2.material = matBox2;
-
+*/
    /* ———————————————————
    3.  IMPORT HEART MODEL
    ———————————————————— */
