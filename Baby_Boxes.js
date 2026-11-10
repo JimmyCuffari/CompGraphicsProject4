@@ -92,7 +92,7 @@ var createScene = async function () {
 
         // Position & scale
         dennis.position.set(10, 20, 0);  //15 z, 2y, 30x
-        dennis.scaling.setAll(5);        // make it bigger
+        //dennis.scaling.setAll(5);        // make it bigger
         dennis.isPickable = true;        // allow grabbing
 
         /* DEBUG COLOR (uncomment if model still shows black)
