@@ -130,7 +130,7 @@ BABYLON.SceneLoader.ImportMesh("", "./", "kneeling_person.glb", scene,
 
         // Position & scale
         kneeling_person.position.set(0, 0, 0);  //15 z, 2y, 30x
-        kneeling_person.setAll(10);        // make it bigger
+        kneeling_person.setAll(100);        // make it bigger
         kneeling_person.isPickable = true;        // allow grabbing
 
         /* DEBUG COLOR (uncomment if model still shows black)
@@ -149,7 +149,7 @@ BABYLON.SceneLoader.ImportMesh("", "./", "ring.glb", scene,
 
         // Position & scale
         ring.position.set(0, 0, 0);  //15 z, 2y, 30x
-        ring.scaling.setAll(5);        // make it bigger
+        ring.scaling.setAll(100);        // make it bigger
         ring.isPickable = true;        // allow grabbing
 
         /* DEBUG COLOR (uncomment if model still shows black)
